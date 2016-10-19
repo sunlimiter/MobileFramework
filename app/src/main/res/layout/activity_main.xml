@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="车国C账号"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="车国C密码"/>
+    <Button
+        android:id="@+id/demo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerInParent="true"
+        android:text="车国C登录" />
+
+    <TextView
+        android:id="@+id/value_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/demo_btn"
+        android:gravity="center"
+        android:text="ceshi" />
+
+    <Button
+        android:id="@+id/gallery_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/value_tv"
+        android:layout_centerInParent="true"
+        android:text="车国C服务" />
+
+    <TextView
+        android:id="@+id/gallery_value_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery_btn"
+        android:gravity="center"
+        android:text="服务结果" />
+
+    <Button
+        android:id="@+id/uploadfile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/gallery_value_tv"
+        android:gravity="center"
+        android:text="上传图片" />
+
+    <Button
+        android:id="@+id/downfile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/uploadfile_btn"
+        android:gravity="center"
+        android:text="下载无进度" />
+
+    <TextView
+        android:id="@+id/downfileprogress_value_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/downfile_btn"
+        android:gravity="center"
+        android:text="下载进度" />
+
+    <Button
+        android:id="@+id/downfileprogress_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/downfileprogress_value_tv"
+        android:gravity="center"
+        android:text="下载带进度" />
+</RelativeLayout>
